@@ -1,0 +1,21 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- World Map Outline -->
+    <path d="M150,100 C200,100 250,150 300,150 C350,150 400,100 450,100 C500,100 550,150 600,150 C650,150 700,100 750,100 C800,100 850,150 900,150 C950,150 1000,100 1050,100" 
+          stroke="#FFD200" 
+          stroke-width="3" 
+          fill="none" 
+          opacity="0.3"/>
+    
+    <!-- Continents (simplified) -->
+    <path d="M300,200 C350,200 400,250 450,250 C500,250 550,200 600,200 C650,200 700,250 750,250 C800,250 850,200 900,200" 
+          stroke="#FFD200" 
+          stroke-width="3" 
+          fill="none" 
+          opacity="0.3"/>
+    
+    <path d="M200,300 C250,300 300,350 350,350 C400,350 450,300 500,300 C550,300 600,350 650,350 C700,350 750,300 800,300" 
+          stroke="#FFD200" 
+          stroke-width="3" 
+          fill="none" 
+          opacity="0.3"/>
+</svg> 

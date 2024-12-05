@@ -1,0 +1,557 @@
+/* Testimonials Hero Section */
+.testimonials-hero {
+    background: var(--primary);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.testimonials-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* World Map Section */
+.world-map {
+    margin-top: 4rem;
+    background: url('../images/world.svg') no-repeat center;
+    background-size: 120%;
+    min-height: 480px;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.map-legend {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1.2rem 2.5rem;
+    border-radius: 15px;
+    display: flex;
+    gap: 2.5rem;
+    z-index: 20;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.startup { background: #FFE066; }
+.midsize { background: #FFB84D; }
+.conglomerate { background: #FF9933; }
+.government {
+    width: 20px;
+    height: 20px;
+    background: #FFD700;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+/* Achievement Counters Section */
+.achievement-counters {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.counter-item {
+    padding: 2rem;
+    background: var(--primary);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.counter {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.counter-item p {
+    font-size: 1.2rem;
+    color: var(--secondary);
+}
+
+/* New Testimonials Section Layout */
+.testimonials {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: var(--secondary);
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* New Box Style for Testimonials */
+.testimonial-card {
+    flex: 0 1 calc(33.333% - 2rem);
+    min-width: 300px;
+    background: var(--primary);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: all 0.3s ease;
+    border-top: 5px solid #FFB84D;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Category Tag */
+.category {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--secondary);
+    color: var(--primary);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Avatar and Quote Layout */
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 3px solid #FFB84D;
+    overflow: hidden;
+    flex-shrink: 0;
+    background-color: var(--primary);
+}
+
+/* Quote Styling */
+blockquote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--secondary);
+    margin: 0;
+    padding: 0;
+}
+
+blockquote p {
+    margin-bottom: 1rem;
+}
+
+cite {
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Only show Business and Job Seeker testimonials */
+.testimonial-card.business,
+.testimonial-card.jobseeker {
+    display: block;
+}
+
+/* Hide Government testimonials */
+.testimonial-card.government {
+    display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 991px) {
+    .testimonial-card {
+        flex: 0 1 calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-card {
+        flex: 0 1 100%;
+    }
+}
+
+/* CTA Section */
+.testimonials-cta {
+    background: var(--primary);
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.testimonials-cta h2 {
+    font-size: 2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+/* Add these styles to the existing CSS */
+.testimonial-card.business .avatar,
+.testimonial-card.jobseeker .avatar {
+    background: none;
+}
+
+.testimonial-card.government .avatar {
+    background: var(--primary);
+    border: 3px solid #FFD700;
+}
+
+/* Update the category labels */
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--secondary);
+    z-index: 2;
+}
+
+.testimonial-card.business::before {
+    content: 'Business';
+}
+
+.testimonial-card.government::before {
+    content: 'Government';
+}
+
+.testimonial-card.jobseeker::before {
+    content: 'Job Seeker';
+    background: linear-gradient(135deg, var(--primary), #FFB84D);
+    color: var(--secondary);
+}
+
+/* Adjust grid for better layout */
+.testimonials-grid {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Add location dots */
+.world-map::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at var(--x) var(--y), var(--dot-color) 0%, transparent 0.5%);
+    background-size: 5% 5%;
+    opacity: 0.8;
+}
+
+.map-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(255, 210, 0, 0.5);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+}
+
+.map-dot.startup { 
+    background: #FFE066;
+    box-shadow: 0 0 15px #FFE066;
+}
+.map-dot.midsize { 
+    background: #FFB84D;
+    box-shadow: 0 0 15px #FFB84D;
+}
+.map-dot.conglomerate { 
+    background: #FF9933;
+    box-shadow: 0 0 15px #FF9933;
+}
+.map-dot.government { 
+    background: #FFD700;
+    box-shadow: 0 0 15px #FFD700;
+}
+
+/* Remove stray jobseeker text */
+body > .jobseeker,
+.jobseeker:not(.testimonial-card) {
+    display: none !important;
+}
+
+/* We'll add these classes once you provide the flags */
+.flag-singapore { 
+    background-image: url('/assets/images/singapore.jpg');
+    background-size: cover;
+}
+
+.flag-dubai { 
+    background-image: url('/assets/images/dubai.png');
+    background-size: cover;
+}
+
+.flag-usa { 
+    background-image: url('/assets/images/usa.jpg');
+    background-size: 140%;
+    background-position: center center;
+}
+
+.flag-australia { 
+    background-image: url('/assets/images/australia.jpg');
+    background-size: cover;
+}
+
+.flag-thailand { 
+    background-image: url('/assets/images/thailand.jpg');
+    background-size: 140%;
+    background-position: center center;
+}
+
+.flag-philippines { 
+    background-image: url('/assets/images/Philippines.jpeg');
+    background-size: 110%;
+    background-position: center center;
+}
+
+.flag-india { 
+    background-image: url('/assets/images/India.png');
+    background-size: 110%;
+    background-position: center center;
+}
+
+.flag-newzealand { 
+    background-image: url('/assets/images/newzealand.png');
+    background-size: 110%;
+    background-position: center center;
+}
+
+/* Update flag styles with correct relative paths */
+.avatar.flag-singapore {
+    background: url('../images/singapore.jpg') center center/cover no-repeat !important;
+}
+
+.avatar.flag-dubai {
+    background: url('../images/dubai.png') center center/cover no-repeat !important;
+}
+
+.avatar.flag-usa {
+    background: url('../images/usa.jpg') center center/150% no-repeat !important;
+}
+
+.avatar.flag-australia {
+    background: url('../images/australia.jpg') center center/cover no-repeat !important;
+}
+
+.avatar.flag-thailand {
+    background: url('../images/thailand.jpg') center center/150% no-repeat !important;
+}
+
+.avatar.flag-philippines {
+    background: url('../images/Philippines.jpeg') center center/120% no-repeat !important;
+}
+
+.avatar.flag-india {
+    background: url('../images/India.png') center center/120% no-repeat !important;
+}
+
+.avatar.flag-newzealand {
+    background: url('../images/newzealand.png') center center/120% no-repeat !important;
+}
+
+/* Media Coverage Section */
+.media-coverage {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.media-coverage h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: var(--secondary);
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.media-card {
+    background: var(--primary);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.media-card h3 {
+    color: var(--secondary);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* News Links Styling */
+.media-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.media-link {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.media-link:hover {
+    transform: translateY(-5px);
+}
+
+.media-link .source {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.media-link .title {
+    color: var(--gray-dark);
+    font-size: 1rem;
+}
+
+/* Video Links Styling */
+.video-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.video-link {
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.video-link:hover {
+    transform: translateY(-5px);
+}
+
+.video-thumbnail {
+    background: var(--secondary);
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-icon {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.video-link .title {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 991px) {
+    .media-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .video-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .media-coverage h2 {
+        font-size: 2rem;
+    }
+
+    .media-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .media-card {
+        padding: 1.5rem;
+    }
+} 

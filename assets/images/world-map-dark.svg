@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="500" viewBox="-180 -90 360 180" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-180" y="-90" width="360" height="180" fill="#0A0A0A"/>
+  
+  <!-- World Map Outlines -->
+  <g fill="none" stroke="#1A1A1A" stroke-width="0.5">
+    <!-- North America -->
+    <path d="M-160 80 L-140 80 L-120 70 L-110 60 L-100 50 L-90 45 L-80 40 L-70 35 L-60 30"/>
+    
+    <!-- South America -->
+    <path d="M-70 0 L-65 -10 L-60 -20 L-55 -30 L-50 -40 L-45 -50"/>
+    
+    <!-- Europe -->
+    <path d="M0 60 L10 60 L20 55 L30 50 L40 45"/>
+    
+    <!-- Africa -->
+    <path d="M0 30 L10 20 L20 10 L30 0 L40 -10 L50 -20"/>
+    
+    <!-- Asia -->
+    <path d="M40 50 L50 45 L60 40 L70 35 L80 30 L90 25 L100 20 L110 15 L120 10"/>
+    
+    <!-- Australia -->
+    <path d="M140 -20 L150 -25 L160 -30"/>
+  </g>
+
+  <!-- Grid Lines -->
+  <g stroke="#1A1A1A" stroke-width="0.25" opacity="0.5">
+    <!-- Latitude lines -->
+    <path d="M-180 60 L180 60"/>
+    <path d="M-180 30 L180 30"/>
+    <path d="M-180 0 L180 0"/>
+    <path d="M-180 -30 L180 -30"/>
+    <path d="M-180 -60 L180 -60"/>
+    
+    <!-- Longitude lines -->
+    <path d="M-150 -90 L-150 90"/>
+    <path d="M-120 -90 L-120 90"/>
+    <path d="M-90 -90 L-90 90"/>
+    <path d="M-60 -90 L-60 90"/>
+    <path d="M-30 -90 L-30 90"/>
+    <path d="M0 -90 L0 90"/>
+    <path d="M30 -90 L30 90"/>
+    <path d="M60 -90 L60 90"/>
+    <path d="M90 -90 L90 90"/>
+    <path d="M120 -90 L120 90"/>
+    <path d="M150 -90 L150 90"/>
+  </g>
+
+  <!-- Continents Fill -->
+  <g fill="#1A1A1A" stroke="#222" stroke-width="0.5">
+    <path d="M-160 80 L-140 80 L-120 70 L-110 60 L-100 50 L-90 45 L-80 40 L-70 35 L-60 30Z"/>
+    <path d="M-70 0 L-65 -10 L-60 -20 L-55 -30 L-50 -40 L-45 -50Z"/>
+    <path d="M0 60 L10 60 L20 55 L30 50 L40 45Z"/>
+    <path d="M0 30 L10 20 L20 10 L30 0 L40 -10 L50 -20Z"/>
+    <path d="M40 50 L50 45 L60 40 L70 35 L80 30 L90 25 L100 20 L110 15 L120 10Z"/>
+    <path d="M140 -20 L150 -25 L160 -30Z"/>
+  </g>
+</svg> 

@@ -1,0 +1,78 @@
+.privacy-content {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.privacy-content .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.privacy-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.effective-date {
+    color: var(--gray-dark);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.policy-section {
+    line-height: 1.8;
+}
+
+.policy-section h2 {
+    font-size: 1.8rem;
+    margin: 2.5rem 0 1rem;
+    color: var(--secondary);
+}
+
+.policy-section h3 {
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+    color: var(--secondary);
+}
+
+.policy-section p {
+    margin-bottom: 1.5rem;
+    color: var(--secondary);
+}
+
+.policy-section ul {
+    margin: 1rem 0 1.5rem 2rem;
+}
+
+.policy-section li {
+    margin-bottom: 0.8rem;
+    color: var(--secondary);
+}
+
+.contact-info {
+    background: var(--gray-light);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .privacy-content h1 {
+        font-size: 2rem;
+    }
+
+    .policy-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .policy-section h3 {
+        font-size: 1.2rem;
+    }
+} 
